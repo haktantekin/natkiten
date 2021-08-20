@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinner</title>
+    <link href="assets/public/css/style.css" rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'"
+        media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Nanum+Pen+Script&family=Patrick+Hand&family=Staatliches&family=Yomogi&family=Barrio&family=Black+Ops+One&family=Finger+Paint&family=Iceberg&family=Karantina&family=Odibee+Sans&family=Pangolin&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
+    <script src="assets/public/js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="pin-container" id="pin-container">
+        <div class="pin-text">
+        </div>
+        <div class="author-text">
+        </div>
+    </div>
+    <div id="output">
+    </div>
+    <div class="fix-container">
+        <div class="fix-item">
+            <label for="bgColor" id="bgColorLabel">Background:</label>
+            <input type="color" id="bgColorInput" name="bgcolor" />
+            <label for="textColor" id="textColorLabel">Font Color:</label>
+            <input type="color" id="textColorInput" name="bgcolor" />
+            <label for="textColor" id="textColorLabel">Font</label>
+            <select id="textFontInput" onchange="changeFont (this);">
+                <option value="'Amatic SC', cursive">
+                    Amatic SC
+                </option>
+                <option value="'Indie Flower', cursive">
+                    Indie Flower
+                </option>
+                <option value="'Yomogi', cursive">
+                    Yomogi
+                </option>
+                <option value="'Staatliches', cursive">
+                    Staatliches
+                </option>
+                <option value="'Patrick Hand', cursive">
+                    Patrick Hand
+                </option>
+                <option value="'Nanum Pen Script', cursive">
+                    Nanum Pen Script
+                </option>
+                <option value="'Black Ops One', cursive">
+                    Black Ops One
+                </option>
+                <option value="'Barrio', cursive">
+                    Barrio
+                </option>
+                <option value="'Finger Paint', cursive">
+                    Finger Paint
+                </option>
+                <option value="'Iceberg', cursive">
+                    Iceberg
+                </option>
+                <option value="'Karantina', cursive">
+                    Karantina
+                </option>
+                <option value="'Odibee Sans', cursive">
+                    Odibee Sans
+                </option>
+                <option value="'Pangolin', cursive">
+                    Pangolin
+                </option>
+            </select>
+            <div id="download" onclick="download()">DONWLOAD</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
