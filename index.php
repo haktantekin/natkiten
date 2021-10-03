@@ -19,7 +19,7 @@
                 <div class="content-item hover">
                     <div class="content-text">
                         <div class="cat-user">
-                            Reading Quotes <span>@readingquotes</span>
+                        <?php the_excerpt();  ?>
                             <div class="content-date">
                                 <?php the_time('d.m.y ') ?>
                             </div>
@@ -32,7 +32,7 @@
                             <h2 class="content-quotes">
                                 <?php the_content(); ?>
                             </h2>
-                            <span class="quators"><?php the_excerpt();  ?></span>
+                            <span class="quators"></span>
                             <?php
                             if (has_post_thumbnail()) {
                                 echo '<div class="content-img">';

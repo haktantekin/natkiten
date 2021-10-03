@@ -1,6 +1,6 @@
 WebFont.load({
     google: {
-        families: ['Crimson+Pro:wght@300;400;500;600;700;800;900&display=swap&subset=latin-ext']
+        families: ['Roboto:wght@300;400;500;700&display=swap&subset=latin-ext']
     }
 });
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
     });
 
     $('.content-item').each(function () {
-        $(this).append('<div class="post-featured"><div class="copy-text"><i class="far fa-copy"></i> Copy</div><div class="facebook-share"><i class="fab fa-facebook-f"></i></div><div class="twitter-share"><i class="fab fa-twitter"></i></div><div class="create-img"><i class="fas fa-highlighter"></i></div><div class="pinterest-share"><i class="fab fa-pinterest"></i></div>  </div>');
+        $(this).append('<div class="post-featured"><div class="copy-text"><i class="far fa-copy"></i> Copy</div><div class="facebook-share"><i class="fab fa-facebook-f"></i>Share on Facebook</div><div class="twitter-share"><i class="fab fa-twitter"></i>Share on Twitter</div><div class="create-img"><i class="fas fa-highlighter"></i>Create Pin</div><div class="pinterest-share"><i class="fab fa-pinterest"></i>Share on Pinterest</div>  </div>');
         $('.copy-text').click(function (e) {
             var _text = $(this).closest('.content-item').children('.content-text').find('.content-quotes').text();
             e.preventDefault();
