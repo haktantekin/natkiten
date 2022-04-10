@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<div class="col-lg-6 col-12">
+<div class="content">
     <div class="content-list">
         <div class="top-info-bar">
             <h1>
-                Reading Quotes
+                Aesthetics Quotes
             </h1>
         </div>
         <?php wp_reset_query(); ?>
@@ -19,7 +19,7 @@
                 <div class="content-item hover">
                     <div class="content-text">
                         <div class="cat-user">
-                        <?php the_excerpt();  ?>
+                        <span class="quators"><?php the_excerpt();  ?></span>
                             <div class="content-date">
                                 <?php the_time('d.m.y ') ?>
                             </div>
@@ -32,7 +32,7 @@
                             <h2 class="content-quotes">
                                 <?php the_content(); ?>
                             </h2>
-                            <span class="quators"></span>
+                            
                             <?php
                             if (has_post_thumbnail()) {
                                 echo '<div class="content-img">';

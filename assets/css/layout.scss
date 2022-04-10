@@ -1,3 +1,21 @@
+$color-one: #F0EFF6;
+$color-eight:#BFADA8;
+$color-seven: #B68375;
+$color-five: #65504E;
+$color-eleven: #65504E;
+
+
+
+
+$color-two: #e0d5cb;
+$color-three: #e0d5cb;
+$color-four: #000000;
+$color-six: #2F3F56;
+$color-nine: #e3e3e3;
+$color-ten: #e0e0e0;
+$color-twelve: #212431;
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -61,7 +79,7 @@ html {
   height: 100vh;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #222130;
+  background-color: $color-one;
 }
 html {
   margin-top: 0 !important;
@@ -134,9 +152,9 @@ html {
 
 main {
   .index-spot {
-    background-color: #e0d5cb;
+    background-color:$color-two;
     padding: 20px;
-    color: #000;
+    color: $color-four;
     font-weight: 500;
     border-radius: 7px;
     margin: 20px 0;
@@ -149,8 +167,8 @@ main {
       display: block;
     }
     p {
-      background-color: #e0d5cb;
-      color: #000;
+      background-color: $color-two;
+      color: $color-four;
       font-weight: 500;
       border-radius: 7px;
       margin: 20px 0;
@@ -159,14 +177,14 @@ main {
       line-height: 25px;
     }
     a {
-      color: #000;
+      color: $color-four;
       font-weight: 600;
       text-decoration: underline;
     }
   }
   .content-list {
-    border-left: 1px solid #292b3a;
-    border-right: 1px solid #292b3a;
+    border-left: 1px solid $color-eight;
+    border-right: 1px solid $color-eight;
     min-height: 100vh;
     height: 100%;
     padding: 20px;
@@ -174,16 +192,16 @@ main {
       display: inline-block;
       width: 100%;
       margin-top: 10px;
-      color: #c3c3c3;
+      color: $color-five;
       a {
-        background-color: #fff;
+        background-color: $color-six;
         padding: 3px 10px;
         margin: 0 5px;
         border-radius: 10px;
         font-size: 13px;
         font-weight: 600;
         text-transform: lowercase;
-        color: #212431;
+        color: $color-twelve;
         &:nth-child(1n) {
           margin-left: 0;
         }
@@ -196,11 +214,11 @@ main {
     .top-info-bar {
       padding: 5px 5px 15px 0;
       font-size: 12px;
-      color: #c7c7c7;
-      border-bottom: 1px solid #292b3a;
+      color: $color-seven;
+      border-bottom: 1px solid $color-eight;
     }
     .go-back {
-      color: #c7c7c7;
+      color: $color-seven;
       font-size: 16px;
       line-height: 0;
       i {
@@ -211,7 +229,7 @@ main {
     .content-item {
       display: block;
       width: 100%;
-      background: #292b3a;
+      background: $color-eight;
       border-radius: 10px;
       position: relative;
       overflow: hidden;
@@ -235,12 +253,12 @@ main {
         display: inline-block;
         width: auto;
         margin-left: 10px;
-        color:gray;
+        color: $color-seven;
         &:before {
           content: "";
           width: 5px;
           height: 5px;
-          background-color: gray;
+          background-color: $color-seven;
           position: absolute;
           left: 0px;
           top: 50%;
@@ -251,7 +269,7 @@ main {
           transition: all 300ms ease;
         }
         a {
-          color: gray;
+          color: $color-five;
           margin-left: 11px;
         }
       }
@@ -260,7 +278,7 @@ main {
         font-size: 13px;
         margin-left: 10px;
         padding-left: 10px;
-        color: gray;
+        color: $color-five;
         display: inline-block;
         @include s768 {
           margin-left: 0;
@@ -270,7 +288,7 @@ main {
           content: "";
           width: 3px;
           height: 3px;
-          background-color: gray;
+          background-color: $color-five;
           position: absolute;
           left: 0px;
           top: 50%;
@@ -287,37 +305,37 @@ main {
         width: 100%;
         h1,
         h2 {
-          color: #c3c3c3;
-          font-size: 13px;
-          font-weight: 400;
-          margin-top: 15px;
-          line-height: 24px;
-          text-align: left;
+        color: $color-nine;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 15px;
+        line-height: 28px;
+        text-align: left;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
           &:empty {
             display: none;
           }
         }
         .quators {
-          float: right;
-          font-style: italic;
-          color: #c3c3c3;
+          float: left;
+          color: $color-five !important;
           font-size: 15px;
           font-weight: 600;
-          margin-top: 10px;
-          text-transform: uppercase;
         }
 
         .cat-user {
-          color: #c3c3c3;
-          font-weight: 700;
+          color: $color-five;
           font-size: 16px;
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
           justify-content: flex-start;
+          align-items: center;
+          align-content: center;
           span {
             font-weight: 400;
-            color: gray;
+            color: $color-five;
             margin-left: 3px;
           }
         }
@@ -327,14 +345,22 @@ main {
           background: #393c50;
           transition: all 0.5s ease;
           .cat-user {
-            color: #c7c7c7;
+            color: $color-seven;
             transition: all 0.5s ease;
           }
+          .post-featured{
+            color: $color-seven !important;
+          }
           .content-text {
+          .content-date,
+          .content-cat,
             h2,
             .quators {
-              color: #c7c7c7;
+              color: $color-seven !important;
               transition: all 0.5s ease;
+              a{
+                color: $color-seven !important;
+              }
             }
           }
         }
@@ -342,14 +368,14 @@ main {
       .post-featured {
         display: flex;
         margin-top: 40px;
-        color: #c7c7c7;
+        color: $color-five;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 20px;
         position: relative;
         bottom: 40px;
         align-content: center;
+        margin-left: 30px;
         .facebook-share,
         .twitter-share,
         .pinterest-share,
@@ -389,22 +415,22 @@ main {
   }
 
   ul.page-numbers li {
-    color: #c3c3c3;
+    color: $color-five;
     margin-left: 10px;
     width: 40px;
     text-align: center;
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
-    background-color: #212431;
+    background-color: $color-twelve;
     border-radius: 4px;
     &:hover {
       -webkit-transform: translateY(-2px);
       transform: translateY(-2px);
       -webkit-transition: all 300ms ease;
       transition: all 300ms ease;
-      background-color: #fff;
-      color: #212431;
+      background-color: $color-six;
+      color: $color-twelve;
     }
     i {
       font-style: normal;
@@ -413,12 +439,12 @@ main {
 
   ul.page-numbers li:hover a,
   ul.page-numbers li:hover span {
-    color: #212431;
+    color: $color-twelve;
   }
 
   ul.page-numbers li a,
   ul.page-numbers li span {
-    color: #c3c3c3;
+    color: $color-five;
     display: block;
     width: 100%;
     height: 100%;
@@ -482,7 +508,7 @@ main {
       li {
         position: relative;
         margin-top: 20px;
-        border-bottom: 1px dashed #c3c3c3;
+        border-bottom: 1px dashed $color-five;
         padding-bottom: 20px;
         &:last-child {
           border-bottom: 0;
@@ -496,7 +522,7 @@ main {
           margin-top: 0;
         }
         a {
-          color: #fff;
+          color: $color-six;
           font-size: 19px;
           font-weight: 600;
         }
@@ -512,7 +538,7 @@ main {
             transition: 0.3s;
           }
           span {
-            color: #c3c3c3;
+            color: $color-five;
           }
         }
       }
@@ -521,7 +547,7 @@ main {
       padding-left: 35px;
       margin-top: 30px;
       font-size: 14px;
-      color: #c3c3c3;
+      color: $color-five;
     }
   }
   .side-panel-close {
@@ -532,7 +558,7 @@ main {
     z-index: 5;
     i {
       font-size: 20px;
-      color: #c3c3c3;
+      color: $color-five;
     }
     @include s768 {
       line-height: 39px;
@@ -542,11 +568,11 @@ main {
   .mobile-menu-social {
     width: 100%;
     text-align: center;
-    color: #c3c3c3;
+    color: $color-five;
     position: absolute;
     bottom: 30px;
     i {
-      color: #c3c3c3;
+      color: $color-five;
       font-size: 20px;
       margin-left: 5px;
       width: 31px;
@@ -569,24 +595,24 @@ main {
       font-size: 14px;
       font-weight: 300;
       width: 120px;
-      color: #fff;
+      color: $color-six;
       font-weight: 600;
       &::-webkit-input-placeholder {
-        color: #c3c3c3;
+        color: $color-five;
       }
       &::-moz-placeholder {
-        color: #c3c3c3;
+        color: $color-five;
       }
       &:-ms-input-placeholder {
-        color: #c3c3c3;
+        color: $color-five;
       }
       &:-moz-placeholder {
-        color: #c3c3c3;
+        color: $color-five;
       }
     }
     .input-button-icon {
       font-family: FontAwesome;
-      color: #c3c3c3;
+      color: $color-five;
       position: absolute;
       right: 0px;
       z-index: 55;
@@ -594,7 +620,7 @@ main {
       top: 0;
       .search-button {
         border: none;
-        color: #fff;
+        color: $color-six;
         cursor: pointer;
         background: 0 0;
         width: 30px;
@@ -616,11 +642,11 @@ main {
     height: 40vh;
     overflow: auto;
     h3 {
-      color: #c3c3c3;
+      color: $color-five;
       font-size: 20px;
       display: inline-block;
       width: 100%;
-      border-bottom: 1px solid #c3c3c3;
+      border-bottom: 1px solid $color-five;
       padding-bottom: 20px;
       padding-left: 20px;
     }
@@ -631,7 +657,7 @@ main {
         padding: 20px;
         display: inline-block;
         border-bottom: 1px solid #464e67;
-        color: #c3c3c3;
+        color: $color-five;
       }
       &:last-child {
         a {
@@ -669,7 +695,7 @@ main {
     top: 20px;
     right: 30px;
     font-size: 18px;
-    color: #fff;
+    color: $color-six;
     cursor: pointer;
     border: 2px solid #dea977;
     font-weight: normal;
@@ -704,21 +730,6 @@ main {
       @include s991 {
         max-height: 500px;
       }
-    }
-  }
-
-  &-title {
-    width: 100%;
-    text-align: center;
-    background-color: #232323;
-    border-radius: 0px 0px 5px 5px;
-    padding: 10px 0px;
-    color: #c3c3c3;
-    font-weight: 600;
-    position: absolute;
-    bottom: -30px;
-    @include s991 {
-      font-size: 11px;
     }
   }
 }
@@ -767,7 +778,7 @@ main {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 30px;
-    color: #e0d5cb;
+    color: $color-two;
     font-size: 16px;
     line-height: 20px;
     position: relative;
@@ -821,7 +832,7 @@ main {
       }
     }
     h1 {
-      color: #e0d5cb;
+      color: $color-two;
       font-size: 32px;
       margin-bottom: 30px;
       line-height: 40px;
@@ -834,72 +845,14 @@ main {
       font-size: 20px;
       margin-top: 20px;
       margin-bottom: 20px;
-      color: #c3c3c3;
+      color: $color-five;
       @include s991 {
         font-size: 16px;
       }
     }
   }
-  .content-author {
-    display: block;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background-color: #dea977;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 10px;
-    padding: 10px 0;
-    line-height: 19px;
-    a {
-      color: #000000;
-      display: block;
-      width: 100%;
-      height: auto;
-      padding: 0 20px 0 40px;
-    }
-    i {
-      position: absolute;
-      margin-left: -22px;
-      margin-top: 2px;
-    }
-  }
-  .content-book {
-    display: flex;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    background-color: #ac7848;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 10px;
-    a {
-      color: #000000;
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    i {
-      position: absolute;
-      margin-left: -22px;
-      margin-top: 2px;
-    }
-  }
 }
 
-@keyframes animatedgradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .left-block {
   padding: 30px 10px;
   .fixed-content {
@@ -908,7 +861,7 @@ main {
   .logo {
     a {
       font-size: 32px;
-      color: #c3c3c3;
+      color: $color-five;
       font-weight: 600;
       width: 50%;
       display: block;
@@ -917,63 +870,6 @@ main {
       }
     }
   }
-  .social {
-    display: inline-flex;
-    align-items: center;
-    height: 100%;
-    @include s768 {
-      display: none;
-    }
-    li {
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 35px;
-      margin-left: 15px;
-      resize: both;
-      --borderWidth: 3px;
-      position: relative;
-      border-radius: var(--borderWidth);
-      z-index: 55;
-      &:after {
-        content: "";
-        position: absolute;
-        top: calc(-1 * var(--borderWidth));
-        left: calc(-1 * var(--borderWidth));
-        height: calc(100% + var(--borderWidth) * 2);
-        width: calc(100% + var(--borderWidth) * 2);
-        background: linear-gradient(60deg, #464e67, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #191919);
-        border-radius: calc(2 * var(--borderWidth));
-        z-index: -1;
-        animation: animatedgradient 3s ease alternate infinite;
-        background-size: 300% 300%;
-      }
-      &:first-child {
-        margin-left: 0;
-      }
-      &:hover {
-        -webkit-transform: translateY(-2px);
-        transform: translateY(-2px);
-        -webkit-transition: all 300ms ease;
-        transition: all 300ms ease;
-      }
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        i {
-          position: relative;
-          color: #c3c3c3;
-          font-size: 20px;
-          font-family: FontAwesome;
-          font-style: normal;
-        }
-      }
-    }
-  }
-
   nav {
     width: 100%;
     margin-top: 20px;
@@ -985,13 +881,13 @@ main {
       margin-left: 0;
       padding: 4px 0;
       a {
-        color: #c3c3c3;
+        color: $color-five;
         font-size: 16px;
       }
     }
   } /* nav */
   .mobile-menu-icon {
-    color: #e0e0e0;
+    color: $color-ten;
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -1018,25 +914,25 @@ main {
       font-size: 16px;
       font-weight: 600;
       width: 100%;
-      color: #6a6b75;
-      background-color: #262837;
+      color: $color-eleven;
+      background-color: $color-eight;
       border-radius: 5px;
       &::-webkit-input-placeholder {
-        color: #6a6b75;
+        color: $color-eleven;
       }
       &::-moz-placeholder {
-        color: #6a6b75;
+        color: $color-eleven;
       }
       &:-ms-input-placeholder {
-        color: #6a6b75;
+        color: $color-eleven;
       }
       &:-moz-placeholder {
-        color: #6a6b75;
+        color: $color-eleven;
       }
     }
     .input-button-icon {
       font-family: FontAwesome;
-      color: #505050;
+      color: $color-five;
       position: absolute;
       right: 17px;
       z-index: 55;
@@ -1048,7 +944,7 @@ main {
 
       .search-button {
         border: none;
-        color: #fff;
+        color: $color-six;
         cursor: pointer;
         background: 0 0;
         width: 30px;
@@ -1062,13 +958,13 @@ main {
   &-categories {
     display: inline-block;
     width: 100%;
-    background: #292b3a;
+    background: $color-eight;
     padding: 20px 0;
     margin-top: 30px;
     border-radius: 10px;
     height: auto;
     h3 {
-      color: #c3c3c3;
+      color: $color-five;
       font-size: 16px;
       text-align: left;
       display: inline-block;
@@ -1084,9 +980,12 @@ main {
           display: inline-block;
           width: 100%;
           padding: 10px 20px;
-          color: #c3c3c3;
+          color: $color-five;
           font-size: 12px;
           font-weight: 300;
+          strong{
+            font-weight: 400;
+          }
         }
         &:last-child {
           a {
@@ -1127,11 +1026,42 @@ main {
       a,
       .mobile-menu-icon {
         font-size: 24px;
-        color: #c3c3c3;
+        color: $color-five;
       }
     }
   }
 }
 #comments {
   margin: 0px auto !important;
+}
+
+@media (min-width:991px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    flex-direction: row;
+    flex: 1 1 1;
+    justify-content: space-between;
+    margin: 0 auto;
+    .left-block{
+      padding: 30px 10px;
+      width: 15%;
+    }
+    .content{
+      width: 60%;
+      flex-grow: 1;
+    }
+    .sidebar{
+      position: relative;
+      padding: 30px 10px;
+      width: 23%;
+      .fixed-content{
+        width: 16%;
+        position: fixed;
+      }
+    }
+  }
 }

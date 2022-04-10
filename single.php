@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="col-lg-6 col-12">
+<div class="content">
     <div class="content-list">
         <div class="top-info-bar">
             <div class="go-back" onclick="history.back()">
@@ -19,7 +19,7 @@
                 <div class="content-item">
                     <div class="content-text">
                         <div class="cat-user">
-                        <?php the_excerpt();  ?> <span>@readingquotes</span>
+                        <span class="quators"><?php the_excerpt();  ?></span>
                             <div class="content-date">
                                 <?php the_time('d.m.y ') ?>
                             </div>
@@ -30,7 +30,7 @@
                         <h1 class="content-quotes">
                             <?php the_content(); ?>
                         </h1>
-                    
+                        
 
                         <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'full');
                         $nowebp = str_replace(".webp", "", $url);
@@ -53,7 +53,6 @@
                             ?>
                         </div>
                     </div>
-                    <?php comments_template() ?>
                 </div>
 
             <?php endwhile; ?>
@@ -76,7 +75,6 @@
                 <div class="content-item hover">
                     <div class="content-text">
                         <div class="cat-user">
-                            Reading Quotes <span>@readingquotes</span>
                             <div class="content-date">
                                 <?php the_time('d.m.y ') ?>
                             </div>

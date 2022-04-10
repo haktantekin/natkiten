@@ -1,6 +1,6 @@
 ## NatkitEN Wordpress Teması
 
-[Reading Quotes](https://readingquotes.com/) web sitesi için yazdığım Wordpress tabanlı web site temasıdır. Scss kullanılarak yazılmış, gulp ile derlenen projedir. 
+[Aesthetics Quotes](https://aestheticsquotes.com/) web sitesi için yazdığım Wordpress tabanlı web site temasıdır. Scss kullanılarak yazılmış, gulp ile derlenen projedir. 
 
 ### Kurulum
 

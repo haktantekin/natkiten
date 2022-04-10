@@ -1,7 +1,8 @@
-      <div class="col-lg-4 sidebar  hidden-xs">
-        <?php get_sidebar(); ?>
-      </div>
-      </div>
+<div class="sidebar  hidden-xs">
+  <?php get_sidebar(); ?>
+</div>
+  </div>
+    </div>
       </div>
       </main>
       <div class="side-panel">
@@ -38,7 +39,7 @@
       <div class="mobile-bar">
         <ul>
           <li>
-            <a href="http://readingquotes.com/"> <i class="fas fa-home"></i></a>
+            <a href="http://aestheticsquotes.com/"> <i class="fas fa-home"></i></a>
           </li>
           <li>
             <div class="mobile-menu-icon d-lg-none d-inline-block">

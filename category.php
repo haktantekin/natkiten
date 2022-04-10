@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="col-lg-6 col-12">
+<div class="content">
     <div class="content-list">
         <div class="top-info-bar">
             <h1>
@@ -18,7 +18,7 @@
                 <div class="content-item hover">
                     <div class="content-text">
                         <div class="cat-user">
-                        <?php the_excerpt();  ?> <span>@readingquotes</span>
+                        <span class="quators"><?php the_excerpt();  ?></span>
                             <div class="content-date">
                                 <?php the_time('d.m.y ') ?>
                             </div>
@@ -31,7 +31,6 @@
                             <h2 class="content-quotes">
                                 <?php the_content(); ?>
                             </h2>
-                          
                             <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID), 'full');
                             $nowebp = str_replace(".webp", "", $url);
                             $nowebp = $nowebp;

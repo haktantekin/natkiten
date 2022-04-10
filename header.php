@@ -39,12 +39,13 @@
     <main class="main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-12 left-block hidden-md">
+                <div class="flex-container">
+                <div class="left-block hidden-md">
                     <div class="fixed-content">
 
                         <div class="logo text-center">
                             <a href="<?php echo esc_url(home_url('/')); ?>">
-                                READING
+                                AESTHETICS
                                 <br>QUOTES
                             </a>
                         </div>

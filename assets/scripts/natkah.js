@@ -8,38 +8,6 @@ WebFont.load({
 
 // Analytics
 $(document).ready(function () {
-    (function ($) {
-        $.fn.visible = function (partial) {
-            var $t = $(this),
-                $w = $(window),
-                viewTop = $w.scrollTop(),
-                viewBottom = viewTop + $w.height(),
-                _top = $t.offset().top,
-                _bottom = _top + $t.height(),
-                compareTop = partial === true ? _bottom : _top,
-                compareBottom = partial === true ? _top : _bottom;
-            return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-        };
-    })(jQuery);
-
-    var win = $(window);
-    var allMods = $(".content-item");
-    allMods.each(function (i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-            el.addClass("already-visible");
-        }
-    });
-    win.scroll(function (event) {
-        allMods.each(function (i, el) {
-            var el = $(el);
-            if (el.visible(true)) {
-                el.addClass("come-in");
-            }
-        });
-
-    });
-
     $(".side-panel").slideReveal({
         trigger: $(".mobile-menu-icon"),
         position: "right",
@@ -96,7 +64,7 @@ $(document).ready(function () {
         localStorage.clear();
         localStorage.setItem("quote", $(this).closest('.content-item').children('.content-text').find('.content-quotes').text().trim());
         localStorage.setItem("author", $(this).closest('.content-item').children('.content-text').find('.quators').text().trim());
-        window.open('/wp-content/themes/natkit/pincreator/', '_blank');
+        window.open('/wp-content/themes/quotes/pincreatorEN/', '_blank');
     });
     $('.content-item .pinterest-share').on('click', function () {
         var url = $(this).closest('.content-item').children('.content-text').find('> a').attr('href');
